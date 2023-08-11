@@ -1,13 +1,6 @@
 #include <stdio.h>
-/*
-*
-* printing a line using puts 
-*
-*/
-
-int main(){
-
-
+int main(void)
+{
 puts("Programming is like building a multilingual puzzle\n");
-
-return 0; }
+return (0); 
+}
