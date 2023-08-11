@@ -13,7 +13,7 @@ long long int doubleType;
 char charType;
 float floatType;
 
-printf("Size of char: %lu byte(s)\n",
+printf("Size of a char: %lu byte(s)\n",
 (unsigned long)sizeof(charType));
 printf("Size of an int: %lu byte(s)\n",
 (unsigned long)sizeof(intType));
