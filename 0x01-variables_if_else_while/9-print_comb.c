@@ -9,16 +9,16 @@
 */
 int main(void)
 {
-char ch; 
-char l = '\n'; 
+int ch; 
 
-for ( ch ='0'; ch <= '9'; ch++)
+
+for ( ch = 0; ch <= 9; ch++)
 {
-    putchar(ch);
+    putchar('0' + ch);
     putchar(',');
     putchar(' ');
 }
-putchar(l);
+putchar('\n');
 
 
 return (0); 
