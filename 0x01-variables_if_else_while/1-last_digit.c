@@ -21,15 +21,15 @@ n = rand() - RAND_MAX / 2;
 x = n % 10;
 if (x == 0)
 {
-	printf("Last digit of %d is and is 0\n", n);
+	printf("Last digit of %d is %d and is 0\n", n, x);
 }
 else if (x < 6)
 {
-	printf("Last digit of %d is and is less than 6\n", n);
+	printf("Last digit of %d is %d and is less than 6\n", n, x);
 }
 else
 {
-	printf("Last digit of %d is grater than 5\n", n);
+	printf("Last digit of %d is %d and is grater than 5\n", n, x);
 
 }
 
