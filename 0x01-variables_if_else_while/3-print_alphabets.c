@@ -10,22 +10,19 @@
 */
 int main(void)
 {
-
-char ch; 
+char ch;
 char chc;
-char l = '\n'; 
+char l = '\n';
 
-for ( ch ='a'; ch <= 'z'; ch++)
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-    
-    putchar(ch);
-    
+	putchar(ch);
 }
-for ( chc ='A'; chc <= 'Z'; chc++)
+for (chc = 'A'; chc <= 'Z'; chc++)
 {
-    putchar(chc);
+	putchar(chc);
 }
 putchar(l);
 
-return (0); 
+return (0);
 }

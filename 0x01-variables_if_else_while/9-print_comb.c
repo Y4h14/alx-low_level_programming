@@ -1,30 +1,26 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * main - Entry point
  *
- * Description: print the value of n's status(+,-,0)
+ * Description: print numbers
  *
  * Return: Always 0 (success)
  *
 */
 int main(void)
 {
-int ch; 
+int ch;
 
-
-for ( ch = 0; ch <= 9; ch++)
+for (ch = 0; ch <= 9; ch++)
 {
-    
-    putchar('0' + ch);
-    if (ch == 9)
-    {
-        continue;
-    }
-    putchar(',');
-    putchar(' ');
+	putchar('0' + ch);
+	if (ch == 9)
+	{
+		continue;
+	}
+	putchar(',');
+	putchar(' ');
 }
 putchar('\n');
-
-
-return (0); 
+return (0);
 }
