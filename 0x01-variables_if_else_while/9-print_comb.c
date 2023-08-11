@@ -15,7 +15,7 @@ char l = '\n';
 for ( ch ='0'; ch <= '9'; ch++)
 {
     putchar(ch);
-    putchar(', ');
+    putchar(',');
     putchar(' ');
 }
 putchar(l);
