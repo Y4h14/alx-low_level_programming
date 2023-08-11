@@ -23,12 +23,12 @@ for (i = 0;i <= 8; i++)
         
         putchar('0'+ i);
         putchar('0'+j);
-        if(j == 9)
+        if(i + j != 17)
         {
-            continue;
+            putchar(',');
+            putchar(' ');
         }
-        putchar(',');
-        putchar(' ');
+        
     }
     
     
