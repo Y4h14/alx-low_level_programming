@@ -21,7 +21,7 @@ printf("Size of a long int: %lu byte(s)\n",
 (unsigned long)sizeof(longIntType));
 printf("Size of a long long int: %lu byte(s)\n",
 (unsigned long)sizeof(doubleType));
-printf("Size of an float: %lu byte(s)\n",
+printf("Size of a float: %lu byte(s)\n",
 (unsigned long)sizeof(floatType));
 
 return (0);
