@@ -27,8 +27,8 @@ for (i = 0; i <= 7; i++)
 				continue;
 			}
 
-			putchar('0' + j);
 			putchar('0' + i);
+			putchar('0' + j);
 			putchar('0' + k);
 			if (i + j + k == 7 + 8 + 9)
 			{
