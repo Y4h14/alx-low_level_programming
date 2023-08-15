@@ -22,7 +22,7 @@ for (i = 0; i <= 9; i++)
 			_putchar((k / 10) + '0');
 			_putchar((k % 10) + '0');
 		}
-		if (i != 9)
+		if (j != 9)
 		{
 			_putchar(',');
 			_putchar(' ');

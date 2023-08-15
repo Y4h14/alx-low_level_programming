@@ -17,6 +17,10 @@ if (n > 98)
 		{
 			printf("%d, ", i);
 		}
+		else
+		{
+			printf("%d", i);
+		}
 	}
 	putchar('\n');
 }
@@ -27,6 +31,10 @@ else
 		if (i != 98)
 		{
 			printf("%d, ", i);
+		}
+		else
+		{
+			printf("%d", i);
 		}
 	}
 	putchar('\n');
