@@ -13,6 +13,10 @@ if (n > 15 || n < 0)
 {
     return; 
 }
+if (n == 0)
+{
+    _putchar('0');
+}
 for (i = 0; i <= n; i++)
 {
 	for (j = 0; j <= n; j++)
