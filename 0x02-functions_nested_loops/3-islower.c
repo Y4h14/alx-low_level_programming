@@ -1,9 +1,11 @@
 #include "main.h"
 
-/*_islower -Entry point
+/**
+ * _islower - Entry point
+ * @c: is and intiger number
  *
- *Retrun = 0 if true 
  *
+ * Return: 0 if lower than 91
  */
 
 int _islower(int c)
@@ -12,9 +14,8 @@ if (c > 91)
 {
 	return (1);
 }
-else 
+else
 {
-	return(0)
+	return (0);
 }
-}
-	
+}	
