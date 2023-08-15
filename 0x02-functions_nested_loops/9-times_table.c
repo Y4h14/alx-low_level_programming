@@ -17,7 +17,7 @@ for (i = 0; i <= 9; i++)
 				_putchar(k + '0');
 				_putchar(',');
 			}
-			else if(j != 9)
+			else if (j != 9)
 			{
 				_putchar(' ');
 				_putchar(' ');
@@ -39,7 +39,7 @@ for (i = 0; i <= 9; i++)
 			if (j != 9)
 			{
 			_putchar(',');
-			}	
+			}
 		}
 	}
 	_putchar('\n');
