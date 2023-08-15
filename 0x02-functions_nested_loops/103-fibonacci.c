@@ -8,7 +8,7 @@
 
 int main(void)
 {
-double sum = 0;
+long int sum = 0;
 long int j, k, next; 
 j = 1;
 k = 2; 
@@ -21,7 +21,7 @@ while (sum < 4000000)
     k = next;
 }
 
-printf("%f\n", sum);
+printf("%ld\n", sum);
 
 
 

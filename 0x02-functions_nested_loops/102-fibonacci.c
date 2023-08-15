@@ -19,7 +19,7 @@ for ( i = 1; i < 51; i++)
     }
     else
     {
-        printf("%ld\n");
+        printf("%ld\n", j);
     }
     next = j + k;
     j = k ;
