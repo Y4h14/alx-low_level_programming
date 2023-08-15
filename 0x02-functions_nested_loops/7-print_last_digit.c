@@ -15,7 +15,12 @@ if (x < 0)
     x = -x; 
 }
 
-     y = (x % 10) ;
+y = (x % 10) ;
+if (y < 0)
+{
+    y = -y;
+}
+
      
 _putchar(y + '0'); 
 return (y);
