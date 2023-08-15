@@ -35,15 +35,19 @@ for (i = 0; i <= 9; i++)
 				_putchar(k + '0');
 			}
 		}
-		else if (k > 10)
+		else if (k >= 10)
 		{
-			if (j != 9)
-			{
 			_putchar(' ');
-			}
 			_putchar((k / 10) + '0');
 			_putchar((k % 10) + '0');
+			if (j != 9)
+			{
+			
 			_putchar(',');
+
+			}
+			
+			
 		}
 	}
 	_putchar('\n');
