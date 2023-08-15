@@ -12,7 +12,15 @@ for (i = 0; i <= 9; i++)
 {
 	for (j = 0; j <= 9; j++)
 	{
-		_putchar((i * j) + '0');
+		int k = i * j;
+		if (k < 10)
+		{
+			_putchar(k + '0');
+		}
+		if (k > 10)
+		{
+			_putchar((k / 10) + '0');
+			_putchar((k % 10) + '0');
 		if (i != 9)
 		{
 		_putchar(' ');
