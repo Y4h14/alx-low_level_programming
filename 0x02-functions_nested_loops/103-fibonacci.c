@@ -8,29 +8,22 @@
 
 int main(void)
 {
+double sum = 0;
 long int i, j, k, next; 
 j = 1;
 k = 2; 
-for ( i = 1; i < 51; i++)
+
+while (sum < 4000000)
 {
-    if (i != 50)
-    {
-        printf("%ld, ", j);
-    }
-    else
-    {
-        printf("%ld\n");
-    }
+    sum += j;
     next = j + k;
     j = k ;
     k = next;
-
-    
-    
 }
 
+printf("%f\n", sum);
 
 
 
-return (0);
+return (0); 
 }
