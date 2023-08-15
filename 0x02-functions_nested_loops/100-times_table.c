@@ -19,11 +19,11 @@ for (i = 0; i <= n; i++)
 		}
 		else if (k < 10 && j != 0)
 		{
+			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
 			_putchar(' ');
 			_putchar(k + '0');
-			_putchar(',');
 		}
 		else if (k >= 10 && k < 100)
 		{
