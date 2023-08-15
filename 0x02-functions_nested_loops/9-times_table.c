@@ -15,12 +15,18 @@ for (i = 0; i <= 9; i++)
 		k = i * j;
 		if (k < 10)
 		{
-			if(j != 9)
+			if (j == 1)
 			{
 				_putchar(k + '0');
 				_putchar(',');
+			}
+			else if(j != 9)
+			{
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(k + '0');
+				_putchar(',');
+				
 			}
 			else
 			{
@@ -29,15 +35,13 @@ for (i = 0; i <= 9; i++)
 		}
 		else if (k > 10)
 		{
-			_putchar((k / 10) + '0');
-			_putchar((k % 10) + '0');
-		
 			if (j != 9)
 			{
 			_putchar(',');
 			_putchar(' ');
-
 			}
+			_putchar((k / 10) + '0');
+			_putchar((k % 10) + '0');
 
 		}
 	}
