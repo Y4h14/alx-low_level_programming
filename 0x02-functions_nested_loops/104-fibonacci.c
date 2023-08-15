@@ -17,7 +17,7 @@ for (i = 1; i < 99; i++)
 	}
 	else
 	{
-		printf("%ld\n", j);
+		printf("%ld,\n", j);
 	}
 	next = j + k;
 	j = k;

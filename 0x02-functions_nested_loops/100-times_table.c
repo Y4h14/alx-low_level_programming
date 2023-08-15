@@ -42,7 +42,7 @@ for (i = 0; i <= n; i++)
 			_putchar((k % 10) + '0');
 		}
 		}
-	}
 	_putchar('\n');
+}
 }
 }
