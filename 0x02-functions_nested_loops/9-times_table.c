@@ -38,11 +38,7 @@ for (i = 0; i <= 9; i++)
 			_putchar(' ');
 			_putchar(' ');
 			}
-			else
-			{
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
-			}
+
 		}
 	}
 	_putchar('\n');
