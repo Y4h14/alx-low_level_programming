@@ -1,14 +1,14 @@
 #include "main.h"
 
-/*
+/**
+ * print_last_digit -Entry point
+ *@x: and intiger
  *
- *print_last_digit -Entry point
+ * Return: the last digit
  */
 
 int print_last_digit(int x)
 {
-
-
-return (x % 10);
-
+int y = (x % 10) + '0';
+return (y);
 }

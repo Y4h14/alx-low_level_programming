@@ -1,15 +1,15 @@
 #include "main.h"
 
-/*
- *jack_bauer -Entry point
+/**
+ * jack_bauer - Entry point
  *
  *
  */
 
 void jack_bauer(void)
 {
-int i,j;
-for(i = 0; i <= 23; i++)
+int i, j;
+for (i = 0; i <= 23; i++)
 {
 	for (j = 0; j <= 59; j++)
 	{

@@ -1,12 +1,14 @@
 #include "main.h"
 
-/*
+/**
+ * add -Entry point
+ * @x: an intiger
+ * @y: an intiger
  *
- * add -Entry point 
- *
+ * Return: sumbmission value
  */
 
 int add(int x, int y)
 {
-return (x + y); 
+return (x + y);
 }
