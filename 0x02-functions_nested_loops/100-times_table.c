@@ -15,7 +15,8 @@ if (n > 15 || n < 0)
 }
 if (n == 0)
 {
-    _putchar('0\n');
+    _putchar('0');
+    _putchar('\n');
     return;
 }
 for (i = 0; i <= n; i++)
