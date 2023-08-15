@@ -30,6 +30,8 @@ for (i = 0; i <= 9; i++)
 			}
 			else
 			{
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(k + '0');
 			}
 		}
