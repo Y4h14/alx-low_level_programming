@@ -27,6 +27,7 @@ for (i = 0; i <= n; i++)
 			}
 			else if(j != n)
 			{
+                _putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(k + '0');
@@ -34,6 +35,7 @@ for (i = 0; i <= n; i++)
 			}
 			else
 			{
+                _putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(k + '0');
@@ -52,14 +54,18 @@ for (i = 0; i <= n; i++)
 			    _putchar(',');
 			    }	
             }
-            
-			_putchar(' ');
-			_putchar((k / 10) + '0');
-			_putchar((k % 10) + '0');
-			if (j != n)
-			{
-			_putchar(',');
-			}	
+            else
+            {
+                _putchar(' ');
+                _putchar(' ');
+			    _putchar((k / 10) + '0');
+			    _putchar((k % 10) + '0');
+			    if (j != n)
+			    {
+			    _putchar(',');
+			    }
+            }
+				
 		}
 	}
 	_putchar('\n');
