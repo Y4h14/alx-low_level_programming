@@ -8,6 +8,6 @@
 
 int _isdigit(int c)
 {
-return (c >= '1' && <= '9');	
+return (c >= '0' && c <= '9');	
 }
 
