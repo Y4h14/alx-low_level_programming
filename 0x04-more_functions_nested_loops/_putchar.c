@@ -1,4 +1,4 @@
-
+#include "main.h"
 int _putchar(char c)
 {
 extern long write(int, const char *, unsigned long);
