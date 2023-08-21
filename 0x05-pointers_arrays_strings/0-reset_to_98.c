@@ -7,7 +7,5 @@
 
 void reset_to_98(int *n)
 {
-int x = *n;
-_putchar(x);
-*n = 98; 
+*n = 98;
 }
