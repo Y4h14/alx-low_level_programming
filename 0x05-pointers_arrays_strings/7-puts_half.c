@@ -19,6 +19,7 @@ else
 {
 	j = len / 2;
 }
+j++;
 for (len = j; str[len] != '\0'; len++)
 {
 	_putchar(str[len]);
