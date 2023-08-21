@@ -17,7 +17,7 @@ for (i = 0; i < n; i++)
 	}
 	else
 	{
-		printf("%d\n", a[i]);
+		printf("%d", a[i]);
 	}
 }
 printf("\n");
