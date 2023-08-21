@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - replicate the put fucntion
- * @s: a string
+ * @str: a string
  *
  * Return: nothing
  */

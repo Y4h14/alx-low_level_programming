@@ -19,7 +19,7 @@ else
 {
 	j = i / 2;
 }
-for (k = j; k <= i; k++)
+for (k = j; str[k] != '\0'; k++)
 {
 	_putchar(str[k]);
 }
