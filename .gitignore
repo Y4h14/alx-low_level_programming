@@ -14,3 +14,14 @@
 0x01-variables_if_else_while/102-print_comb5
 0x01-variables_if_else_while/a.out
 0x05-pointers_arrays_strings/7-puts_half.c
+0x05-pointers_arrays_strings/main.h
+0x06-pointers_arrays_strings/0-strcat
+0x06-pointers_arrays_strings/1-strncat
+0x06-pointers_arrays_strings/2-strncpy
+.gitignore
+0x06-pointers_arrays_strings/3-strcmp
+0x06-pointers_arrays_strings/4-rev_array
+0x06-pointers_arrays_strings/5-string_toupper
+0x06-pointers_arrays_strings/6-cap
+0x06-pointers_arrays_strings/7-1337
+0x06-pointers_arrays_strings/_putchar.c
