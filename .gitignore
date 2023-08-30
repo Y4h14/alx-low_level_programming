@@ -31,3 +31,9 @@
 0x08-recursion/0-main.c
 .gitignore
 0x08-recursion/0-puts_recursion
+0x08-recursion/2-strlen_recursion
+0x08-recursion/1-print_rev_recursion
+.gitignore
+0x08-recursion/1-main.c
+.gitignore
+0x08-recursion/2-main.c
