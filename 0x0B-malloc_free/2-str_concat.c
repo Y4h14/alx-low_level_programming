@@ -13,7 +13,9 @@ char *str_concat(char *s1, char *s2)
 {
 char *cat;
 unsigned int i, j;
-int max, len1, len2 = 0;
+int max, len1, len2;
+len1 = 0;
+len2 = 1;
 
 if (s1 == NULL)
 	s1[0] = '\0';
@@ -25,7 +27,7 @@ if (s2 == NULL)
 while (s2[len2] != '\0')
 	len2++;
 
-max = len1 + len2 + 2;
+max = len1 + len2 + 1;
 cat = malloc(max *sizeof(char));
 if (cat == NULL)
 	return (NULL);

@@ -22,10 +22,10 @@ if (s == NULL)
 
 
 for (i = 0; i < (unsigned int)height; i++)
+{
 	s[i] = malloc(width * sizeof(int));
 	if (s[i] == NULL)
 		return (NULL);
-
-
+}
 return (s);
 }
