@@ -15,10 +15,10 @@ unsigned int i;
 if (str == NULL)
 	return (NULL);
 
-new = malloc(sizeof(str) * sizeof(char));
+new = malloc((sizeof(str) * sizeof(char)) + 1);
 if (new == NULL)
 	return (NULL);
-for (i = 0; i < sizeof(str); i++)
+for (i = 0; str[i] != '\0'; i++)
 	new[i] = str[i];
 
 if (new == NULL)
