@@ -10,7 +10,7 @@
 void free_grid(int **grid, int height)
 {
 unsigned int i;
-for (i = height; i < 0; i--)
+for (i = 0; i < (unsigned int)height; i++)
 	free(grid[i]);
 
 free(grid);
