@@ -14,8 +14,9 @@ char *new;
 unsigned int i, len;
 if (str == NULL)
 	return (NULL);
-len = sizeof(str) / sizeof(str[0]);
-new = malloc(len *sizeof(char));
+while (str[len] != '\0')
+	len++;
+new = malloc(len * sizeof(char));
 if (new == NULL)
 	return (NULL);
 for (i = 0; str[i] != '\0'; i++)
