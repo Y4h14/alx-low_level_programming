@@ -15,7 +15,9 @@ unsigned int i;
 if (str == NULL)
 	return (NULL);
 
-new = malloc(sizeof(str));
+new = malloc(sizeof(str) * sizeof(char));
+if (new == NULL)
+	return (NULL);
 for (i = 0; i < sizeof(str); i++)
 	new[i] = str[i];
 
