@@ -15,7 +15,7 @@ unsigned int i;
 if (str == NULL)
 	return (NULL);
 
-new = malloc((sizeof(str) * sizeof(char)) + 1);
+new = malloc(((sizeof(str) + 1) * sizeof(char)) + 1);
 if (new == NULL)
 	return (NULL);
 for (i = 0; str[i] != '\0'; i++)
