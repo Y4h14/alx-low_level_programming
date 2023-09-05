@@ -14,4 +14,5 @@ for (i = 0; i < (unsigned int)height; i++)
 	free(grid[i]);
 
 free(grid);
+return (0);
 }
