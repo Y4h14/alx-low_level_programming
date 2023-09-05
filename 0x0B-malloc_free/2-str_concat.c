@@ -13,14 +13,22 @@ char *str_concat(char *s1, char *s2)
 {
 char *cat;
 unsigned int i, j;
-int max;
+int max, len1, len2 = 0;
+
 if (s1 == NULL)
 	s1[0] = '\0';
+while (s1[len1] != '\0')
+	len1++;
+
 if (s2 == NULL)
 	s2[0] = '\0';
+while (s2[len2] != '\0')
+	len2++;
 
-max = sizeof(s1) + sizeof(s2) + 1;
+max = len1 + len2 + 2;
 cat = malloc(max *sizeof(char));
+if (cat == NULL)
+	return (NULL);
 
 for (i = 0; s1[i] != '\0'; i++)
 	cat[i] = s1[i];

@@ -15,10 +15,16 @@ int **s;
 if (!width | !height)
 	return (NULL);
 
-
 s = malloc(height * sizeof(int));
+if (s == NULL)
+	return (NULL);
+
+
+
 for (i = 0; i < (unsigned int)height; i++)
 	s[i] = malloc(width * sizeof(int));
+	if (s[i] == NULL)
+		return (NULL);
 
 
 return (s);
