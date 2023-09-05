@@ -14,7 +14,7 @@ char *new;
 unsigned int i, len;
 if (str == NULL)
 	return (NULL);
-len = sizeof(str) / sizeof(str[i]);
+len = sizeof(str) / sizeof(str[0]);
 new = malloc(len *sizeof(char));
 if (new == NULL)
 	return (NULL);
