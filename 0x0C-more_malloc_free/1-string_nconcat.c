@@ -27,7 +27,7 @@ if (n >= (unsigned int)lens2)
 }
 else
 {
-	cat = malloc((lens1 + n) * sizeof(char));
+	cat = malloc((lens1 + n + 1) * sizeof(char));
 	r = n;
 }
 if (cat == NULL)
