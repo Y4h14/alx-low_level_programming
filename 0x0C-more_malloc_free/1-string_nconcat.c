@@ -10,10 +10,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int lens1 = 0, lens2 = 0;
-int i, j, n1;
+int i, j;
 char *cat;
-/* get the length of the string from the number of bytes(n) */
-n1 = (int)n / sizeof(char);
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
@@ -27,7 +25,7 @@ if (cat == NULL)
 	return (NULL);
 for (i = 0; i < lens1; i++)
 	cat[i] = s1[i];
-if (n1 >= lens2)
+if (n >= (unsigned int)lens2)
 {
 	for (j = 0; j <= lens2; j++)
 	{
@@ -37,7 +35,7 @@ if (n1 >= lens2)
 }
 else
 {
-	for (j = 0; j <= n1; j++)
+	for (j = 0; (unsigned int)j <= n; j++)
 	{
 		cat[i] = s2[j];
 		i++;
