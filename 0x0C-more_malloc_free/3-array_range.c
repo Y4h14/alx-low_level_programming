@@ -22,7 +22,7 @@ if (ptr == NULL)
 
 for (i = 0; i <= (max - min); i++)
 	ptr[i] = min + i;
-ptr[i] = max;
+
 
 return (ptr);
 }
