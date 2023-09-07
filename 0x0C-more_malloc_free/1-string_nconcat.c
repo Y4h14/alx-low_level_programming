@@ -35,7 +35,7 @@ if (cat == NULL)
 
 for (i = 0; s1[i] != '\0'; i++)
 	cat[i] = s1[i];
-for (j = 0; j <= r; j++)
+for (j = 0; j < r; j++)
 {
 	cat[i] = s2[j];
 	i++;
