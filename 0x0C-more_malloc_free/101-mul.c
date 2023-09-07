@@ -1,7 +1,8 @@
 #include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
-int _isdigit(char c);
+int _isdigit(int c);
+void err();
 
 /**
  * main - multiplies two positive numbers
@@ -13,26 +14,42 @@ int _isdigit(char c);
 
 int main(int argc, char *argv[])
 {
-int len = 0;
-
-while (argv[len] != '\0')
-	len++;
-
-if (len < 3)
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
+if (argc < 3)
 {
-	printf("Error\n");
+	err();
 	exit(98);
 }
-if (!_isdigit(argv[1]) || !_isdigit(argv[2]))
+if (!_isdigit(a) || !_isdigit(b))
 {
-printf("Error\n");
+err();
 exit(98);
 }
 
-printf("%d\n", argv[1] * argv[2]);
+_putchar(a * b);
+_putchar('\n');
 
 return (0);
 }
+
+
+/**
+ * err - print "Error"
+ * Return: nothing
+ */
+void err()
+{
+int i = 0;
+char *e = "Error";
+while (e[i] != '\0')
+{
+	_putchar(e[i]);
+	i++;
+}
+_putchar('\n');
+}
+
 
 /**
  * _isdigit - chech digit
