@@ -39,3 +39,16 @@
 0x08-recursion/2-main.c
 0x0A-argc_argv/100-change.c
 0x0A-argc_argv/nargs
+0x0C-more_malloc_free/0-main.c
+.gitignore
+.gitignore
+0x0C-more_malloc_free/2-main.c
+0x0C-more_malloc_free/3-main.c
+.gitignore
+.gitignore
+0x0C-more_malloc_free/2-calloc
+0x0C-more_malloc_free/3-array_range
+.gitignore
+0x0C-more_malloc_free/1-main.c
+0x0C-more_malloc_free/1-string_nconcat
+0x0C-more_malloc_free/a
