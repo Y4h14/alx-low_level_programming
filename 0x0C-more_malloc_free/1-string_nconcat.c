@@ -28,14 +28,14 @@ if (n >= (unsigned int)lens2)
 else
 {
 	cat = malloc((lens1 + n + 1) * sizeof(char));
-	r = n;
+	r = n + 1;
 }
 if (cat == NULL)
 	return (NULL);
 
 for (i = 0; i < lens1; i++)
 	cat[i] = s1[i];
-for (j = 0; j <= r; j++)
+for (j = 0; j < r; j++)
 {
 	cat[i] = s2[j];
 	i++;
