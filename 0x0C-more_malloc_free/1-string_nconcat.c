@@ -28,7 +28,7 @@ if (n >= (unsigned int)lens2)
 else
 {
 	cat = malloc((lens1 + n) * sizeof(char));
-	r = n ;
+	r = n;
 }
 if (cat == NULL)
 	return (NULL);
@@ -40,7 +40,7 @@ for (j = 0; j <= r; j++)
 	cat[i] = s2[j];
 	i++;
 }
-
+cat[i] = '\0';
 
 return (cat);
 }
