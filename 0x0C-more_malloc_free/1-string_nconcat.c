@@ -33,14 +33,14 @@ else
 if (cat == NULL)
 	return (NULL);
 
-for (i = 0; i < lens1; i++)
+for (i = 0; s1[i] != '\0'; i++)
 	cat[i] = s1[i];
 for (j = 0; j <= r; j++)
 {
 	cat[i] = s2[j];
 	i++;
 }
-cat[i] = '\0';
+
 
 return (cat);
 }
