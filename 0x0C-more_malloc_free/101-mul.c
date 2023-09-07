@@ -2,12 +2,12 @@
 #include "main.h"
 
 int _isdigit(int c);
-void err();
+void err(void);
 
 /**
  * main - multiplies two positive numbers
- * @num1: intiger
- * @num2: intiger
+ * @argc: intiger
+ * @argv: array of arguments
  *
  * Return: always 0
  */
@@ -38,7 +38,7 @@ return (0);
  * err - print "Error"
  * Return: nothing
  */
-void err()
+void err(void)
 {
 int i = 0;
 char *e = "Error";
