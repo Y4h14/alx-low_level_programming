@@ -12,3 +12,4 @@ if (d)
 	free(d->owner);
 	free(d);
 }
+}
