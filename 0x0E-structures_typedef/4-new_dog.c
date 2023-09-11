@@ -1,5 +1,6 @@
 #include "dog.h"
 int len(char *s);
+char *_strcopy(char *dest, char *src);
 /**
  * new_dog - creates a new dog
  * @name: dog's name
@@ -10,8 +11,8 @@ int len(char *s);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *newdog;
-char *n, *o;
-int lend, leno, i, j;
+int lend, leno;
+
 lend = len(name);
 leno = len(owner);
 
@@ -19,32 +20,28 @@ newdog = malloc(sizeof(struct dog));
 if (newdog == NULL)
 	return (NULL);
 
-if (name == NULL || owner == NULL)
+newdog->name = malloc((lend + 1) * sizeof(char));
+if (newdog->name == NULL)
+{
+	free(newdog);
 	return (NULL);
-
-n = malloc(lend *sizeof(char));
-if (n == NULL)
+}
+newdog->owner = malloc((leno + 1) * sizeof(char));
+if (newdog->owner == NULL)
+{
+	free(newdog->name);
+	free(newdog);
 	return (NULL);
-o = malloc(leno *sizeof(char));
-if (o == NULL)
-	return (NULL);
-
-for (i = 0; name[i] != '\0'; i++)
-	n[i] = name[i];
-n[i] = '\0';
-for (j = 0; owner[j] != '\0'; j++) 
-	o[i] = owner[i];
-o[i] = '\0';
-
-newdog->name = n;
+}
+_strcopy(newdog->name, name);
 newdog->age = age;
-newdog->owner = o;
+_strcopy(newdog->owner, owner);
 return (newdog);
 }
 /**
  * len - calculates the lenth of a string
  * @s: a string of char
- * Returns: lenth of the string
+ * Return: lenth of the string
  */
 int len(char *s)
 {
@@ -54,4 +51,22 @@ while (s[i] != '\0')
 	i++;
 }
 return (i);
+}
+/**
+ * _strcopy - copyies a string
+ * @dest: destination string
+ * @src: source string
+ * Return: pointer to dest
+ */
+char *_strcopy(char *dest, char *src)
+{
+int len = 0, i;
+while (src[len] != '\0')
+{
+	len++;
+}
+for (i = 0; i < len; i++)
+	dest[i] = src[i];
+dest[i] = '\0';
+return (dest);
 }
