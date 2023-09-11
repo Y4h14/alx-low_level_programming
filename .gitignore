@@ -55,3 +55,5 @@
 0x0C-more_malloc_free/100-main.c
 0x0C-more_malloc_free/.100-realloc.c.swp
 0x0C-more_malloc_free/101-mul
+0x0E-structures_typedef/2-main.c
+.gitignore
