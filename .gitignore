@@ -57,3 +57,4 @@
 0x0C-more_malloc_free/101-mul
 0x0E-structures_typedef/2-main.c
 .gitignore
+0x0E-structures_typedef/.4-new_dog.c.swp
