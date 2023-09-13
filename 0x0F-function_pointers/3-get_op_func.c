@@ -26,6 +26,6 @@ while (i < 5)
 		return (ops[i].f);
 	i++;
 }
-return (0);
+return (NULL);
 }
 
