@@ -19,7 +19,7 @@ char *op;
 if (argc != 4)
 {
 	printf("Error\n");
-	exit(89);
+	exit(98);
 }
 /*assigning arguments and converting to integers*/
 num1 = atoi(argv[1]);
