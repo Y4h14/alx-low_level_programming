@@ -15,19 +15,19 @@ unsigned int i;
 char *c;
 
 va_start(args, n);
-c = va_arg(args, char *);
-for (i = 0; i < n - 1; i++)
+for (i = 0; i < n; i++)
 {
+	c = va_arg(args, char *);
 	if (c == NULL)
 		printf("(nil)");
 	else
 		printf("%s", c);
 	if (separator == NULL)
 		separator = "";
-	printf("%s", separator);
-	c = va_arg(args, char *);
+	if (i < n - 1)
+		printf("%s", separator);
+	
 }
-printf("%s", c);
 
 va_end(args);
 printf("\n");
