@@ -26,7 +26,7 @@ for (i = 0; i < n; i++)
 		separator = "";
 	if (i < n - 1)
 		printf("%s", separator);
-	
+
 }
 
 va_end(args);
