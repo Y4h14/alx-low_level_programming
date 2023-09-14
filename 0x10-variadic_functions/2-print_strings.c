@@ -23,11 +23,13 @@ for (i = 0; i < n - 1; i++)
 		printf("(nil)");
 	}
 	printf("%s", c);
-	if (separator != NULL)
-		printf("%s", separator);
+	if (separator == NULL)
+		separator = "";
+	printf("%s", separator);
 	c = va_arg(args, char *);
 }
-printf("%s\n", c);
+printf("%s", c);
 
 va_end(args);
+printf("\n");
 }
