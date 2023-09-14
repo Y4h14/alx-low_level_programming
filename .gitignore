@@ -74,3 +74,5 @@
 0x10-variadic_functions/1-main.c
 0x10-variadic_functions/c
 0x10-variadic_functions/2-main.c
+0x10-variadic_functions/3-main.c
+.gitignore
