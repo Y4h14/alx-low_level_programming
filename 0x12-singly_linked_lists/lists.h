@@ -1,5 +1,5 @@
-#ifndef LISTS_H_
-#define LISTS_H_
+#ifndef LISTS_H
+#define LISTS_H
 #include <stddef.h>
 /*Struct definition*/
 typedef struct list_t *nodeptr;
