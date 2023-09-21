@@ -1,8 +1,14 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stddef.h>
-/*Struct definition*/
+
 typedef struct list_t *nodeptr;
+/**
+ * struct list_t - a linked list implementation
+ * @str: a string
+ * @len: an int
+ * @next: pointer to the next node
+ */
 struct list_t
 {
 	char *str;
@@ -10,8 +16,12 @@ struct list_t
 	nodeptr next;
 };
 typedef struct list_t list_t;
-
+/*Utility function*/
+int slen(char *str);
 /*Functions defintions*/
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
 #endif
