@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * size_t print_list - prints all elements of list_t
+ * print_list - prints all elements of list_t
  * @h: a list_t object
  * Return: the number of nodes
  */
