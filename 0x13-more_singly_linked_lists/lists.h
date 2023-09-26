@@ -3,18 +3,17 @@
 #include <stddef.h>
 typedef struct listint_t *nodeptr;
 /**
-* struct list_t - a linked list implementation
-* @str: a string
-* @len: an int
+* struct listint_t - a linked list implementation
+* @n: the value of the node (int)
 * @next: pointer to the next node
 */
 struct listint_t
 {
-        int n;
-        nodeptr next;
+	int n;
+	nodeptr next;
 };
 typedef struct listint_t listint_t;
-/*Utility function*/
+
 /*Functions defintions*/
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
@@ -27,4 +26,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
+/*Advanced Tasks*/
+listint_t *reverse_listint(listint_t **head);
+size_t print_listint_safe(const listint_t *head);
+size_t free_listint_safe(listint_t **h);
+listint_t *find_listint_loop(listint_t *head);
 #endif
