@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd_a, fd_b;
+	int fd_a, fd_b, a, b;
 	char buff[1024];
 	ssize_t bytes_read, bytes_write;
 
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while ((bytes_read = read(fd_a, buff, 1024)) > 0)
 	{
 		bytes_write = write(fd_b, buff, bytes_read);
-		if (bytes_write < 0 || write(fd_b, buff, bytes_write) != x)
+		if (bytes_write < 0 || write(fd_b, buff, bytes_write) != bytes_write)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fd_a);
