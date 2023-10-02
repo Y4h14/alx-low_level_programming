@@ -25,11 +25,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 	read_count = read(fd, buffer, letters);
-	close(fd);
-	write_count = write(1, buffer, 50);
+	write_count = write(1, buffer, sizeof(letters));
 	if (read_count == -1)
 		return (0);
 	free(buffer);
-
+	close(fd);
 	return (write_count);
 }
