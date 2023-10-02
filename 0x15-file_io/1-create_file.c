@@ -11,8 +11,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, i, w;
-	char *buff;
+	int fd, write_count;
 
 	if (filename == NULL)
 		return (-1);
@@ -22,20 +21,10 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		buff = malloc(1024);
-		if (buff == NULL)
+		write_count = write(fd, text_content, strlen(text_content));
+		if (write_count < 0)
 			return (-1);
-		for (i = 0; i < (int)strlen(text_content); i++)
-			buff[i] = text_content[i];
-		buff[i] = '\0';
-		w = write(fd, buff, strlen(text_content));
-		if (w < 0)
-		{
-			free(buff);
-			return (w);
-		}
 	}
-	free(buff);
 	close(fd);
 	return (1);
 }
