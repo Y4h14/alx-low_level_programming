@@ -7,6 +7,7 @@
  * main - copies the contents of a file onto another file
  * @argc: number of arguments
  * @argv: the list of the actual aguments
+ * Return: always o
  */
 int main(int argc, char *argv[])
 {
