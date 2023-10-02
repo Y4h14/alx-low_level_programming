@@ -17,19 +17,23 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 	fd = open(filename, O_CREAT | O_WRONLY, 00600);
-	if (!fd)
+	if (fd < 0)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content)
 	{
 		buff = malloc(1024);
 		if (buff == NULL)
 			return (-1);
 		for (i = 0; i < (int)strlen(text_content); i++)
 			buff[i] = text_content[i];
+		buff[i] = '\0';
 		w = write(fd, buff, strlen(text_content));
 		if (w < 0)
+		{
+			free(buff);
 			return (w);
+		}
 	}
 	free(buff);
 	close(fd);
