@@ -59,21 +59,26 @@ int main(int argc, char *argv[])
 	fd_a = open(argv[1], O_RDONLY);
 	fd_b = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	read_count = read(fd_a, buff, 1024);
+	/*reading and writing to and from buffer*/
 
-	if (fd_a < 0 || read_count < 0)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
+	do {
 
-	write_count = write(fd_b, buff, read_count);
-	if (write_count < 0 || fd_b < 0)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		close(fd_a);
-		exit(99);
-	}
+		read_count = read(fd_a, buff, 1024);
+
+		write_count = write(fd_b, buff, read_count);
+
+		if (fd_a < 0 || read_count < 0)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+		if (write_count < 0 || fd_b < 0)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fd_a);
+			exit(99);
+		}
+	} while (read_count > 0);
 
 	close_file(fd_a);
 	close_file(fd_b);
