@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * sum_dlistintn- sums all the data of a list
+ * sum_dlistint - sums all the data of a list
  * @head: the head node of a list
- * Retrun: the sum of list data or 0
+ * Return: the sum of list data or 0
  */
 int sum_dlistint(dlistint_t *head)
 {

@@ -4,6 +4,7 @@
  * add_dnodeint_end - add a new node to the end of a list
  * @head: pointer to the header node
  * @n: the value of the new node
+ * Return: the newley added node or NULL
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
@@ -13,7 +14,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (NULL);
 
 	new = malloc(sizeof(dlistint_t));
-	if(new == NULL)
+	if (new == NULL)
 		return (NULL);
 
 	new->n = n;
