@@ -19,7 +19,8 @@ def main():
             if is_pal(x):
                 if x > large_pal:
                     large_pal = x
-    print(large_pal)
+    with open("102-result", "w") as file:
+        file.write(str(large_pal))
 
 if __name__=="__main__": 
     main() 
